@@ -27,5 +27,5 @@ export default {
 </script>
 
 <style>
-#app{position: relative; height: 100%; width: 100%;}
+	#app{position: relative; height: 100%; width: 100%;}
 </style>
