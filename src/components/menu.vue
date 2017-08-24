@@ -1,6 +1,6 @@
 <template>
 <!-- 导航栏弹窗 -->
- <div class="m-menu j-menu" v-show="menuShow">
+ <div class="m-menu j-menu" :class="{'z-open':menuShow}">
         <div class="m-status g-pt40 s-false">
             <div class="p-child f-clear s-false">
                 <div class="p-left">

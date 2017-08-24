@@ -5,11 +5,13 @@
     <router-link to="Page">Page</router-link> -->
     <router-view></router-view>
     <Mmenu v-bind:menu-show="menuShow"></Mmenu>
+    <Mshade v-bind:menu-show="menuShow"></Mshade>
   </div>
 </template>
 
 <script>
 import Mmenu from './components/menu'
+import Mshade from './components/shade'
 export default {
 	name: 'app',
 	data(){
@@ -18,7 +20,8 @@ export default {
 		}
 	},
 	components:{
-	    Mmenu
+	    Mmenu,
+	    Mshade
 	},
 }
 </script>
