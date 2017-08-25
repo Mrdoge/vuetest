@@ -1,8 +1,6 @@
 <template>
-  <div class="g-layout">
-    <head-top>
-        
-    </head-top>
+  <div class="g-layout g-dnav">
+    <head-top></head-top>
     {{msg}}
   </div>
 </template>

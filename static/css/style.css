@@ -23,6 +23,7 @@ body{height: 100%;}
 /*布局*/
 .g-pt40{padding-top: 0.4rem;}
 .g-mr45{margin-right: 0.45rem;}
+.g-dnav{padding-top: 0.78rem;} /*顶开导航条高度*/
 
 /*组件*/
 .u-btn{display:inline-block;overflow:hidden;vertical-align:middle;text-align:center;color:#fff;position:relative;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-webkit-transition:background-color 0.2s linear;-ms-transition:background-color 0.2s linear;-moz-transition:background-color 0.2s linear;-o-transition:background-color 0.2s linear;transition:background-color 0.2s linear;text-decoration:none;font-weight:360;outline:none;padding:0 1em;height:30px;line-height:30px;font-size:14px;background-color:#2185D0;border:1px solid #2185D0;border-radius:3px;color:#fff}
