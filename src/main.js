@@ -3,6 +3,7 @@
 
 import '../static/css/style.css'
 import '../static/js/rem.js'
+import '../static/js/fakedata.js'
 
 import Vue from 'vue'
 import App from './App'

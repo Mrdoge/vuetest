@@ -21,7 +21,7 @@ export default {
     }
   },
   created:function(){
-    console.log(123);
+
   },
   methods:{
 
