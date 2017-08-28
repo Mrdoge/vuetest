@@ -120,8 +120,8 @@ i{
 .m-menu .m-bar .p-item .i-ico {width: 0.6rem;}
 .m-menu .m-bar .i-right{float: right;transition: all 0.4s ease;color: #fff;}
 .m-menu .m-bar .p-item.z-active .i-right{-weikt-transform:rotate(90deg); transform:rotate(90deg); -moz-transform:rotate(90deg); -o-transform:rotate(90deg); -ms-transform:rotate(90deg);}
-.m-menu .m-barlist{display: none;}
-.m-menu .m-bar .p-item.z-active .m-barlist{display: block;}
+.m-menu .m-barlist{/*display: none;*/ transition: all 0.4s ease; -webkit-transition: all 0.4s ease; height: inherit; max-height: 0;}
+.m-menu .m-bar .p-item.z-active .m-barlist{max-height: 200px;}
 .m-menu .m-barlist .p-list_item {padding-top: 0.3rem;font-size: 0.24rem;padding-left: 0.6rem;}
 .m-menu .m-barlist .p-list_item:active {color: #ece567;}
 .m-menu .m-barlist .p-list_item a{color: #fff;}
