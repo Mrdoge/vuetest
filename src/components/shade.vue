@@ -17,6 +17,9 @@ export default {
 	methods:{
 		hideeverything:function(){
 			VueApp.$children[0].menuShow = false;
+			for (var i = 0; i < D['nav'].length; i++) {
+	            D['nav'][i].showsub = false;
+	        }
 		}
 	}
 }

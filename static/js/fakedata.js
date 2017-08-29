@@ -4,11 +4,52 @@
  * @date    2017-08-25 15:21:03
  * @version $Id$
  */
+
+//导航列表
 D['nav'] = [
 	{
-		name:"易产品",
-		link:"javascript:;",
+		name:"需求匹配",
+		link:"hello",
 		i:"&#xe608;",
+		// subnav:[
+		// 	{
+		// 		name:"碳氢化合物",
+		// 		link:"hello"
+		// 	},
+		// 	{
+		// 		name:"现货银锭",
+		// 		link:"mdcdata"
+		// 	},
+		// 	{
+		// 		name:"再生铜",
+		// 		link:"copper.html"
+		// 	}
+		// ]
+	},
+	{
+		name:"任务管理",
+		link:"hello",
+		i:"&#xe607;"
+	},
+	{
+		name:"财务管理",
+		link:"hello",
+		i:"&#xe60a;"
+	},
+	{
+		name:"个人中心",
+		link:"hello",
+		i:"&#xe635;"
+	},
+	{
+		name:"合作案例",
+		link:"hello",
+		i:"&#xe636;"
+	},
+	{
+		name:"二级菜单",
+		link:"",
+		i:"&#xe636;",
 		subnav:[
 			{
 				name:"碳氢化合物",
@@ -24,85 +65,32 @@ D['nav'] = [
 			}
 		]
 	},
+]
+
+//用户信息
+D['user'] = {
+	is_login:true,
+	avatar:"http://otdna08z0.bkt.clouddn.com/avatar/597700302e13d.jpg?imageView2/1/w/75/h/75",
+	nickname:"刘鸡鸡",
+	available:"5352892.880000003"
+}
+
+//轮播图
+D['banner'] = [
 	{
-		name:"易投资",
-		link:"javascript:;",
-		i:"&#xe607;",
-		subnav:[
-			{
-				name:"体验微宝",
-				link:"page_weipan.html"
-			},
-			{
-				name:"交易细则",
-				link:"page_rule.html"
-			}
-		]
+		name:"",
+		url:"http://otdna08z0.bkt.clouddn.com/default/20170721/5971c2c8c53ac.jpg?imageView2/1/w/800/h/380",
 	},
 	{
-		name:"易资讯",
-		link:"javascript:;",
-		i:"&#xe60a;",
-		subnav:[
-			{
-				name:"专家分析",
-				link:"lists.html"
-			},
-			{
-				name:"市场资讯",
-				link:"lists.html"
-			},
-			{
-				name:"热点专题",
-				link:"lists.html"
-			},
-			{
-				name:"财经日历",
-				link:"lists.html"
-			},
-		]
+		name:"",
+		url:"http://otdna08z0.bkt.clouddn.com/default/20170721/5971c302dbc4f.jpg?imageView2/1/w/800/h/380",
 	},
 	{
-		name:"易软件",
-		link:"softdown",
-		i:"&#xe635;"
+		name:"",
+		url:"http://otdna08z0.bkt.clouddn.com/default/20170721/5971c324addad.png?imageView2/1/w/800/h/380",
 	},
 	{
-		name:"易直播",
-		link:"live",
-		i:"&#xe636;"
+		name:"",
+		url:"http://otdna08z0.bkt.clouddn.com/default/20170721/5971c31a08e92.jpg?imageView2/1/w/800/h/380",
 	},
-	{
-		name:"易优惠",
-		link:"lists",
-		i:"&#xe649;"
-	},
-	{
-		name:"易代理",
-		link:"lists",
-		i:"&#xe649;"
-	},
-	{
-		name:"关于我们",
-		link:"javascript:;",
-		i:"&#xe609;",
-		subnav:[
-			{
-				name:"品牌故事",
-				link:"article.html"
-			},
-			{
-				name:"网站公告",
-				link:"article.html"
-			},
-			{
-				name:"集团新闻",
-				link:"article.html"
-			},
-			{
-				name:"联系我们",
-				link:"article.html"
-			},
-		]
-	}
 ]

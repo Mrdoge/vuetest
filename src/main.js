@@ -8,15 +8,17 @@ import '../static/js/fakedata.js'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
 Vue.config.productionTip = true
 /* eslint-disable no-new */
+
 window.VueApp = new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App },
-  created:function(){
-  	//FastClick.attach(document.body); //解决300ms延时
-  }
+	el: '#app',
+	router,
+	template: '<App/>',
+	components: { App },
+	created:function(){
+		// router.beforeEach((to, from, next) => {
+		//   console.log(to)
+		// })
+	}
 })
