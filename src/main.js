@@ -8,9 +8,29 @@ import '../static/js/fakedata.js'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+
+import AV from 'leancloud-storage'
+import lr from 'leancloud-realtime'
+
 Vue.config.productionTip = true
 /* eslint-disable no-new */
+var APP_ID = '4RdFuGsl8DNtM0JIN6Lqzn3D-gzGzoHsz';
+var APP_KEY = 'ftl7zrVsaKXIWmuJQMiOK4oO';
+//var Master_Key = 'PXfC9JTSWenG8ArKYLmPqDaW';
 
+AV.init({
+  appId: APP_ID,
+  appKey: APP_KEY,
+  //masterKey:Master_Key,
+});
+var TestObject = AV.Object.extend('TestObject');
+var testObject = new TestObject();
+console.log(testObject);
+// testObject.save({
+//   words: 'Hello World!'
+// }).then(function(object) {
+//   //alert('LeanCloud Rocks!');
+// })
 window.VueApp = new Vue({
 	el: '#app',
 	router,
