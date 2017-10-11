@@ -67,7 +67,9 @@ export default {
     window.onscroll =  function(){
       //lazyload();
       //debounce(lazyload,window);
-      throttle2(lazyload,100,100)
+      if (window.location.href.indexOf('index') > -1) {
+        throttle2(lazyload,100,100)
+      }
     };
     // function debounce(method,context){ //节流方案一
     //   clearTimeout(method.timeout);

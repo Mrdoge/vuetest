@@ -10,12 +10,14 @@
 	</transition>
     <Mmenu v-bind:menu-show="menuShow"></Mmenu>
     <Mshade v-bind:menu-show="menuShow"></Mshade>
+    <Backtotop></Backtotop>
   </div>
 </template>
 
 <script>
 import Mmenu from './components/menu'
 import Mshade from './components/shade'
+import Backtotop from '@/components/backtotop'
 export default {
 	name: 'app',
 	data(){
@@ -25,7 +27,8 @@ export default {
 	},
 	components:{
 	    Mmenu,
-	    Mshade
+	    Mshade,
+	    Backtotop
 	},
 	methods:{
 

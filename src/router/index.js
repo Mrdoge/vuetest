@@ -9,12 +9,13 @@ require('swiper/dist/css/swiper.css') //swiper
 import Hello from '@/components/Hello'
 import mdcdata from '@/components/mdcdata'
 import header from '@/components/header'
+
+//页面
 import home from '@/page/home/home'
 import airticle from '@/page/airticle/airticle'
 
 Vue.use(Router)
 Vue.use(Resource)
-Vue.use(home)
 Vue.use(VueAwesomeSwiper)
 
 export default new Router({
@@ -32,6 +33,10 @@ export default new Router({
     },
     {
         path: '/',
+        redirect: '/index',
+    },
+    {
+        path: '/index',
         name: 'home',
         component: home
     },
