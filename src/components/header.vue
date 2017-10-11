@@ -22,6 +22,7 @@ export default {
 			//console.log(this);
 			//console.log(VueApp.$children[0].menuShow);
 			VueApp.$children[0].menuShow = !VueApp.$children[0].menuShow;
+			//console.log(123);
 		}
 	}
 }
