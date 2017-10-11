@@ -10,6 +10,7 @@ import Hello from '@/components/Hello'
 import mdcdata from '@/components/mdcdata'
 import header from '@/components/header'
 import home from '@/page/home/home'
+import airticle from '@/page/airticle/airticle'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -33,6 +34,11 @@ export default new Router({
         path: '/',
         name: 'home',
         component: home
+    },
+    {
+        path: '/airticle',
+        name: 'airticle',
+        component: airticle
     },
     // {
     //     path: '/Page', //page组件

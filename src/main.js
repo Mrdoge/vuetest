@@ -25,7 +25,6 @@ AV.init({
 });
 var TestObject = AV.Object.extend('TestObject');
 var testObject = new TestObject();
-console.log(testObject);
 // testObject.save({
 //   words: 'Hello World!'
 // }).then(function(object) {

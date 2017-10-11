@@ -3,7 +3,11 @@
     <!-- <img src="./assets/logo.png"> -->
     <!-- <router-link to="hello">hello</router-link>
     <router-link to="Page">Page</router-link> -->
-    <router-view></router-view>
+	<transition name="fade">
+		<keep-alive>
+			<router-view></router-view>
+		</keep-alive>
+	</transition>
     <Mmenu v-bind:menu-show="menuShow"></Mmenu>
     <Mshade v-bind:menu-show="menuShow"></Mshade>
   </div>
@@ -23,6 +27,9 @@ export default {
 	    Mmenu,
 	    Mshade
 	},
+	methods:{
+
+	}
 }
 </script>
 
