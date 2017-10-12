@@ -3,7 +3,7 @@
     <!-- <img src="./assets/logo.png"> -->
     <!-- <router-link to="hello">hello</router-link>
     <router-link to="Page">Page</router-link> -->
-	<transition name="fade">
+	<transition name="no-mode-translate-fade" mode="out-in">
 		<keep-alive>
 			<router-view></router-view>
 		</keep-alive>
@@ -24,6 +24,9 @@ export default {
 		return{
 			menuShow:false
 		}
+	},
+	created:function(){
+		//console.log(this);
 	},
 	components:{
 	    Mmenu,

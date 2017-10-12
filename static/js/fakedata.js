@@ -95,7 +95,7 @@ D['banner'] = [
 	},
 ]
 
-
+//首页列表
 D['list'] = [
 	{
 		title:"赵薇青涩学生照",
@@ -153,3 +153,50 @@ D['list'] = [
 		disc:"一些描述一些描述一些描述一些描述一些描述一些描述一些描述一些描述一些描述一些描述"
 	},
 ]
+
+//评论
+D['comments'] = [
+	{
+		avatar:"http://otdna08z0.bkt.clouddn.com/avatar/597700302e13d.jpg?imageView2/1/w/24/h/24",
+		name:"刘骚集",
+		like:4,
+		ct:"我简单的说2句",
+		reply:[
+			{
+				name:"何一生",
+				ct:"说个卵"
+			},
+			{
+				name:"爸爸",
+				ct:"爸爸不要你了"
+			},
+			{
+				name:"爸爸2",
+				ct:"爸爸2也不要你了"
+			}
+		],
+		showall:false
+	},
+	{
+		avatar:"http://otdna08z0.bkt.clouddn.com/avatar/597700302e13d.jpg?imageView2/1/w/24/h/24",
+		name:"刘骚集2",
+		like:98,
+		ct:"我简单的说3句",
+		reply:[
+			{
+				name:"何一生",
+				ct:"又是你"
+			}
+		],
+		showall:false
+	},
+	{
+		avatar:"http://otdna08z0.bkt.clouddn.com/avatar/597700302e13d.jpg?imageView2/1/w/24/h/24",
+		name:"刘骚集3",
+		like:45,
+		ct:"我简单的说4句",
+		reply:[],
+		showall:false
+	}
+]
+

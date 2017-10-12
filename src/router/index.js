@@ -19,7 +19,7 @@ Vue.use(Resource)
 Vue.use(VueAwesomeSwiper)
 
 export default new Router({
-  routes: [
+    routes: [
     {
     	path: '/hello',
         //redirect:'/hello',
@@ -50,5 +50,5 @@ export default new Router({
     //     name: 'Page',
     //     component: Page
     // }
-  ]
+    ]
 })

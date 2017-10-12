@@ -36,8 +36,11 @@ window.VueApp = new Vue({
 	template: '<App/>',
 	components: { App },
 	created:function(){
-		// router.beforeEach((to, from, next) => {
-		//   console.log(to)
-		// })
+		router.beforeEach((to, from, next) => {
+			next(); //执行加载页面
+			setTimeout(function(){
+				document.body.scrollTop = 0; //每次加载页面都返回顶部
+			},400);
+		})
 	}
 })
