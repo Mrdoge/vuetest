@@ -19,6 +19,7 @@ img{max-width:100%;border:none;}
 li{list-style-type: none;}
 
 body{background-color: #fff;}
+input[type="text"]{background:none;outline:none;border:0px;}
 .s-linear{background-color: #847dfd; background: -webkit-linear-gradient(left top, #9f7afe , #5a8dfd) !important; background: -o-linear-gradient(bottom right, #9f7afe, #5a8dfd) !important; background: -moz-linear-gradient(bottom right, #9f7afe, #5a8dfd) !important; background: linear-gradient(to bottom right, #9f7afe , #5a8dfd) !important;}
 .s-basic{background-color: #7095fb;}
 .s-basic_l1{background-color: #91adff;}
@@ -61,6 +62,27 @@ body{background-color: #fff;}
 .u-btn.z-loading > .p-loading{display:inline-block;display:none \9;position:relative;width:1.3em;height:1.3em;margin-left:0.4em; vertical-align: middle; top: -0.08em;}
 .u-btn.z-loading > .p-loading .before{content:" ";position:absolute;left:0;top:0;width:1em;height:1em;border:0.14em solid rgba(255,255,255,0.5); border-color:inherit ;-webkit-border-radius:100%;border-radius:100%; opacity: 0.3;}
 .u-btn.z-loading > .p-loading .after{content:" ";position:absolute;left:0;top:0;width:1em;height:1em;border:0.14em solid transparent;border-radius:100%;-webkit-border-radius:100%;border-bottom-color:inherit;-webkit-animation:FU_rotation 0.75s linear infinite;-moz-animation:FU_rotation 0.75s linear infinite;-o-animation:FU_rotation 0.75s linear infinite;}
+
+/*- 提示 -*/
+.m-FU_hint{border-radius:10px}
+.m-FU_hint > .ct{font-size:16px;line-height:24px;padding:10px;min-width:120px;max-width:180px;padding-top:0}
+.m-FU_hint > .ico{height:70px;line-height:70px;font-size:50px}
+.m-FU_hint{text-align:center;position:fixed;background-color:rgba(0,0,0,0.7);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);top:38.2%;left:50%;display:none;z-index:9999;-webkit-will-change:transform,opacity;will-change:transform,opacity;-webkit-transform:translateZ(0);transform:translateZ(0)}
+.m-FU_hint > .ct{text-align:center;color:#fff}
+.m-FU_hint > .ct > div{display:inline-block;text-align:left;*zoom:1;*display:inline}
+.m-FU_hint > .ico{text-align:center;color:#fff;font-weight: bold;}
+
+/*- 拟态框 -*/
+.m-FU_modal{width:90%;max-width:360px}
+.m-FU_modal > .p-title{margin:0 10px;padding:10px 0;font-size:24px}
+.m-FU_modal > .p-close{font-size:20px;width:20px;height:20px;line-height:20px;right:10px;top:8px;border-radius:0}
+.m-FU_modal > .p-ct{font-size:14px;margin:10px}
+.m-FU_modal{position:fixed;left:50%;background-color:#FFF;top:10%;z-index:10;display:none;border-radius:5px;-webkit-transform:translateZ(0);transform:translateZ(0);will-change:transform,opacity;-webkit-will-change:transform,opacity}
+.m-FU_modal > .p-title{position:relative;border-bottom:1px solid #d7d7d7;text-align:center;color:#333}
+.m-FU_modal .p-close{position:absolute;text-align:center;z-index:5;cursor:pointer;color:#d4d4d4}
+.m-FU_modal .p-close:hover{color:#F44F53}
+.m-FU_modal > .p-ct{overflow-y:auto;line-height:1.4;-webkit-overflow-scrolling:touch;overflow-y:auto}
+.m-FU_modal.s-mid{top:38.2%!important}
 
 /*--- 方法 ---*/
 .f-of_h{ overflow:hidden;}
@@ -105,7 +127,7 @@ i{
     display: inline-block;
 }
 
-.g-layout{max-width: 640px; margin: 0 auto;}
+.g-layout{max-width: 640px; margin: 0 auto; position: relative;}
 
 
 /*菜单栏*/
@@ -142,7 +164,7 @@ i{
 #m-shade{background-color:#000;opacity:0.6;filter:alpha(opacity=60);position:fixed;left:0;top:0;width:100%;height:100%;z-index:6;display:none;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-will-change:transform,opacity;will-change:transform,opacity}
 #m-shade.z-show{display: block;}
 
-
+/*页面进来动画*/
 .no-mode-translate-fade-enter-active, .no-mode-translate-fade-leave-active {
   transition: all .28s;
 }
@@ -154,4 +176,72 @@ i{
 }
 .no-mode-translate-fade-leave-active {
   transform: translateX(0);
+}
+
+/*一些动画*/
+.a-FU_hintIn{-webkit-animation:FU_hintIn .2s ease .1s both;animation:FU_hintIn .2s ease .1s both}
+@-webkit-keyframes FU_hintIn{
+  0%{opacity:0;-webkit-transform:translateZ(0) scale(1.2)}
+  100%{opacity:1;-webkit-transform:translateZ(0) scale(1)}
+}
+@-webkit-keyframes FU_hintIn2{
+  0%{opacity:0;-webkit-transform:translateZ(0) scale(1.8)}
+  100%{opacity:1;-webkit-transform:translateZ(0) scale(1)}
+}
+@-webkit-keyframes FU_hintOut{
+  0%{opacity:1;-webkit-transform:translateZ(0) scale(1)}
+  100%{opacity:0;-webkit-transform:translateZ(0) scale(1.2)}
+}
+@-moz-keyframes FU_hintIn{
+  0%{opacity:0;-moz-transform:translateZ(0) scale(1.2)}
+  100%{opacity:1;-moz-transform:translateZ(0) scale(1)}
+}
+@-moz-keyframes FU_hintOut{
+  0%{opacity:1;-moz-transform:translateZ(0) scale(1)}
+  100%{opacity:0;-moz-transform:translateZ(0) scale(1.2)}
+}
+@-ms-keyframes FU_hintIn{
+  0%{opacity:0;-ms-transform:translateZ(0) scale(1.2)}
+  100%{opacity:1;-ms-transform:translateZ(0) scale(1)}
+}
+@-ms-keyframes FU_hintOut{
+  0%{opacity:1;-ms-transform:translateZ(0) scale(1)}
+  100%{opacity:0;-ms-transform:translateZ(0) scale(1.2)}
+}
+@keyframes FU_hintIn{
+  0%{opacity:0;transform:translateZ(0) scale(1.2)}
+  100%{opacity:1;transform:translateZ(0) scale(1)}
+}
+@keyframes FU_hintOut{
+  0%{opacity:1;transform:translateZ(0) scale(1)}
+  100%{opacity:0;transform:translateZ(0) scale(1.2)}
+}
+
+@-webkit-keyframes FU_modalIn{
+  0%{opacity:0;-webkit-transform:translateZ(0) scale(.8)}
+  100%{opacity:1;-webkit-transform:translateZ(0) scale(1)}
+}
+@-webkit-keyframes FU_modalOut{
+  0%{opacity:1;-webkit-transform:translateZ(0) scale(1)}
+  100%{opacity:0;-webkit-transform:translateZ(0) scale(0.8)}
+}
+@-moz-keyframes FU_modalIn{
+  0%{opacity:0;-moz-transform:translateZ(0) scale(.8)}
+  100%{opacity:1;-moz-transform:translateZ(0) scale(1)}
+}
+@-moz-keyframes FU_modalOut{
+  0%{opacity:1;-moz-transform:translateZ(0) scale(1)}
+  100%{opacity:0;-moz-transform:translateZ(0) scale(0.8)}
+}
+@-ms-keyframes FU_modalIn{
+  0%{opacity:0;-ms-transform:translateZ(0) scale(.8)}
+  100%{opacity:1;-ms-transform:translateZ(0) scale(1)}
+}
+@-ms-keyframes FU_modalOut{
+  0%{opacity:1;-ms-transform:translateZ(0) scale(1)}
+  100%{opacity:0;-ms-transform:translateZ(0) scale(0.8)}
+}
+@keyframes FU_modalIn{
+  0%{opacity:0;transform:translateZ(0) scale(.8)}
+  100%{opacity:1;transform:translateZ(0) scale(1)}
 }

@@ -28,7 +28,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.m-backtotop{position: fixed; right: 0.2rem; bottom: 0.2rem; width: 0.6rem; height: 0.6rem; border-radius: 0.04rem; text-align: center; line-height: 0.6rem; background-color: #7497fd; color: #fff; transition: all ease 0.4s; animation:fadeIntop 0.4s;}
+.m-backtotop{position: fixed; right: 0.2rem; bottom: 1rem; width: 0.6rem; height: 0.6rem; border-radius: 0.04rem; text-align: center; line-height: 0.6rem; background-color: #7497fd; color: #fff; transition: all ease 0.4s; animation:fadeIntop 0.4s;}
 .m-backtotop > .p-angel{border-bottom: 0.14rem solid #fff; border-left: 0.1rem solid transparent; border-right: 0.1rem solid transparent; border-top: none; display: inline-block;}
 @keyframes fadeIntop{
   from{transform:translateY(0.2rem); opacity: 0;}

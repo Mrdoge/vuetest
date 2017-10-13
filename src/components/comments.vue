@@ -33,14 +33,14 @@ export default {
 	name: 'comments',
 	data () {
 		return {
-
+			comments:D['comments']
 		}
 	},
 	created:function(){
 
 	},
 	props:[
-		'comments'
+		//'comments'
 	],
 	methods:{
 
