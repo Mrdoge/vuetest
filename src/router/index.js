@@ -8,7 +8,7 @@ require('swiper/dist/css/swiper.css') //swiper
 //组件
 import Hello from '@/components/Hello'
 import mdcdata from '@/components/mdcdata'
-import header from '@/components/header'
+//import header from '@/components/header'
 
 //页面
 import home from '@/page/home/home'
