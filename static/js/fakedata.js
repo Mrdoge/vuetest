@@ -28,22 +28,22 @@ D['nav'] = [
 	},
 	{
 		name:"任务管理",
-		link:"hello",
+		link:"/hello",
 		i:"&#xe607;"
 	},
 	{
 		name:"财务管理",
-		link:"hello",
+		link:"/hello",
 		i:"&#xe60a;"
 	},
 	{
 		name:"个人中心",
-		link:"hello",
+		link:"/hello",
 		i:"&#xe635;"
 	},
 	{
 		name:"合作案例",
-		link:"hello",
+		link:"/hello",
 		i:"&#xe636;"
 	},
 	{
@@ -53,11 +53,11 @@ D['nav'] = [
 		subnav:[
 			{
 				name:"二级菜单",
-				link:"hello"
+				link:"/hello"
 			},
 			{
 				name:"二级菜单",
-				link:"mdcdata"
+				link:"/mdcdata"
 			},
 			{
 				name:"二级菜单",

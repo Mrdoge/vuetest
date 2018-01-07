@@ -4,9 +4,10 @@
     <!-- <router-link to="hello">hello</router-link>
     <router-link to="Page">Page</router-link> -->
 	<transition name="no-mode-translate-fade" mode="out-in">
-		<keep-alive>
+		<keep-alive v-if="$route.meta.keepAlive">
 			<router-view></router-view>
 		</keep-alive>
+		<router-view v-if="!$route.meta.keepAlive"></router-view>
 	</transition>
     <Mmenu v-bind:menu-show="menuShow"></Mmenu>
     <Mshade v-bind:menu-show="menuShow"></Mshade>

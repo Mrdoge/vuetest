@@ -12,6 +12,7 @@ import mdcdata from '@/components/mdcdata'
 
 //页面
 import home from '@/page/home/home'
+import index from '@/page/index/index'
 import airticle from '@/page/airticle/airticle'
 
 Vue.use(Router)
@@ -20,12 +21,12 @@ Vue.use(VueAwesomeSwiper)
 
 export default new Router({
     routes: [
-    {
-    	path: '/hello',
-        //redirect:'/hello',
-    	name: 'hello',
-    	component: Hello
-    },
+    // {
+    // 	path: '/hello',
+    //     //redirect:'/hello',
+    // 	name: 'hello',
+    // 	component: Hello
+    // },
     {
     	path: '/mdcdata', //获取药店名字数据
     	name: 'mdcdata',
@@ -33,12 +34,23 @@ export default new Router({
     },
     {
         path: '/',
-        redirect: '/index',
+        redirect: '/index' //默认到主页
     },
     {
         path: '/index',
+        name: 'index',
+        component: index, //首页
+        meta:{
+            keepAlive:true //缓存
+        }
+    },
+    {
+        path: '/home',
         name: 'home',
-        component: home
+        component: home, //首页
+        meta:{
+            keepAlive:true //缓存
+        }
     },
     {
         path: '/airticle',

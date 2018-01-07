@@ -9,6 +9,7 @@ import '../static/js/main.js'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import layer from 'vue-layer'
 
 import AV from 'leancloud-storage'
 import lr from 'leancloud-realtime'
@@ -31,12 +32,17 @@ var testObject = new TestObject();
 // }).then(function(object) {
 //   //alert('LeanCloud Rocks!');
 // })
+
+
+Vue.prototype.$layer = layer(Vue); //使用layer
+
 window.VueApp = new Vue({
 	el: '#app',
 	router,
 	template: '<App/>',
 	components: { App },
 	created:function(){
+		console.log(layer)
 		router.beforeEach((to, from, next) => {
 			next(); //执行加载页面
 			setTimeout(function(){
